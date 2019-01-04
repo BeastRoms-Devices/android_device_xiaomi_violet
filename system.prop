@@ -78,7 +78,7 @@ telephony.lteOnCdmaDevice=1
 
 #system prop for Bluetooth SOC type
 vendor.bluetooth.soc=cherokee
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 
 #
 #snapdragon value add features
