@@ -12,15 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+# Inherit some common BeastROMs stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/beast/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := mk_violet
+PRODUCT_NAME := beast_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
+
+BEAST_BUILD_TYPE := OFFICIAL
 
 BUILD_FINGERPRINT := "xiaomi/violet/violet:9/PKQ1.181203.001/9.5.23:user/release-keys"
 
