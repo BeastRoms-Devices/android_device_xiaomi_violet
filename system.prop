@@ -19,6 +19,7 @@ persist.rcs.supported=0
 
 dev.pm.dyn_samplingrate=1
 ro.colorpick_adjust=true
+
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=0
 
@@ -65,7 +66,6 @@ bt.max.hfpclient.connections=1
 # System property for cabl
 ro.qualcomm.cabl=0
 ro.vendor.display.cabl=0
-
 ro.vendor.display.svi=1
 ro.vendor.display.sensortype=2
 vendor.display.svi.config=1
@@ -75,10 +75,6 @@ vendor.display.svi.config_path=/system/etc/display/SVIConfig.xml
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
-
-#Simulate sdcard on /data/media
-#
-persist.fuse_sdcard=true
 
 #system prop for Bluetooth SOC type
 vendor.bluetooth.soc=cherokee
@@ -158,7 +154,6 @@ ro.location.osnlp.package=com.google.android.gms
 ro.location.osnlp.region.package=
 vendor.perf.dolphin.enable=false
 
-#lct.ydt 20180911 add for voWIFI
 #iwaln vowifi corresponding
 persist.vendor.data.iwlan.enable=true
 
@@ -178,7 +173,6 @@ persist.dirac.gef.int.did=0xF
 persist.dirac.gef.ext.did=0xA,0x2D
 persist.dirac.gef.ext.mid=0x10012DE1
 persist.dirac.gef.int.mid=0x10012DE0
-#End dzy  20180920
 
 #add for color invert
 ro.vendor.df.effect.conflict=1
@@ -205,6 +199,3 @@ persist.vendor.qg.log_level=1
 persist.vendor.net.doxlat=true
 
 ro.sf.lcd_density=440
-
-# Maintainer
-ro.mk.maintainer=guaiyihu
