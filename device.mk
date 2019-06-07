@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \
-    libvulkan
+    libvulkan \
+    vendor.display.config@1.0
 
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
@@ -364,6 +365,13 @@ PRODUCT_PACKAGES += \
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk_package
+	
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Wifi
 PRODUCT_PACKAGES += \
