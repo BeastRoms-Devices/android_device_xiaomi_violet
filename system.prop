@@ -21,7 +21,7 @@ dev.pm.dyn_samplingrate=1
 ro.colorpick_adjust=true
 
 #Property to enable display default color mode
-vendor.display.enable_default_color_mode=0
+vendor.display.enable_default_color_mode=1
 
 qcom.hw.aac.encoder=true
 
@@ -198,4 +198,4 @@ persist.vendor.qg.log_level=1
 #HTH-48746, lct.ydt enable the XLAT
 persist.vendor.net.doxlat=true
 
-ro.sf.lcd_density=440
+ro.sf.lcd_density=420
