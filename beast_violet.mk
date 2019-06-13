@@ -16,6 +16,9 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/beast/config/common.mk)
 
+# Dirac
+$(call inherit-product-if-exists, vendor/xiaomi/Dirac/dirac.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := beast_violet
 PRODUCT_DEVICE := violet
